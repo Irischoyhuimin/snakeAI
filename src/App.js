@@ -7,6 +7,7 @@ import Col from "react-bootstrap/Col";
 import Dropdown from "react-bootstrap/Dropdown";
 import Form from "react-bootstrap/Form";
 import BootstrapSwitchButton from "bootstrap-switch-button-react";
+import randomColor from "randomcolor";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -73,8 +74,8 @@ class App extends Component {
             <Container>
               <h1>🐍Snake AI</h1>
               <p>
-                A Snake Game that can be played by an AI that can help visualize
-                several search algorithms.
+                Welcome to my garden! I am Slytherin, I can find food myself but it would be great if you can help me with that.
+                There are different ways I can go searching for my good you can take a look.
               </p>
             </Container>
           </Jumbotron>
@@ -85,12 +86,12 @@ class App extends Component {
               <Col sm={4} align="center" style={{ margin: "auto" }}>
                 <div className="d-flex flex-column h-100">
                   <Row className="justify-content-center">
-                    <div id="score">🍎Score: {this.state.score}</div>
+                    <div id="score">Eaten: {this.state.score} Meals</div>
                   </Row>
                   <Row className="justify-content-center">
                     <Form className="form">
                       <Form.Group as={Row}>
-                        <Form.Label column>Algorithm:</Form.Label>
+                        <Form.Label column>Different Ways:</Form.Label>
                         <Col>
                           <Dropdown>
                             <Dropdown.Toggle
@@ -134,7 +135,7 @@ class App extends Component {
                                   this.setState({ algorithm: "Human" });
                                 }}
                               >
-                                Human Player
+                                Human
                               </Dropdown.Item>
                             </Dropdown.Menu>
                           </Dropdown>
@@ -153,50 +154,7 @@ class App extends Component {
                           />
                         </Col>
                       </Form.Group>
-                      <Form.Group as={Row}>
-                        <Form.Label column>Snake Speed</Form.Label>
-                        <Col>
-                          <Form.Control
-                            type="range"
-                            min="10"
-                            max="100"
-                            step="10"
-                            id="snakeSpeed"
-                            className="slider"
-                            onChange={(event) => {
-                              this.setState({
-                                gameSettings: {
-                                  snakeSpeed: 100 - event.target.value,
-                                  enlargeSnake: this.state.gameSettings
-                                    .enlargeSnake,
-                                },
-                              });
-                            }}
-                          />
-                          {100 - this.state.gameSettings.snakeSpeed}
-                        </Col>
-                      </Form.Group>
-                      <Form.Group as={Row}>
-                        <Form.Label column>
-                          Enlarge Snake after eating apple
-                        </Form.Label>
-                        <Col>
-                          <BootstrapSwitchButton
-                            checked={this.state.enlargeSnake}
-                            onlabel="ON"
-                            offlabel="OFF"
-                            onChange={(checked: boolean) => {
-                              this.setState({
-                                gameSettings: {
-                                  snakeSpeed: this.state.gameSettings
-                                    .snakeSpeed,
-                                  enlargeSnake: checked,
-                                },
-                              });
-                            }}
-                          />
-                        </Col>
-                      </Form.Group>
+        
                     </Form>
                   </Row>
                 </div>
