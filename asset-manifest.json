@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/snakeAI/static/css/main.9bcc2d3f.chunk.css",
+    "main.css": "/snakeAI/static/css/main.dae5923d.chunk.css",
     "main.js": "/snakeAI/static/js/main.bece262f.chunk.js",
     "main.js.map": "/snakeAI/static/js/main.bece262f.chunk.js.map",
     "runtime-main.js": "/snakeAI/static/js/runtime-main.925a331e.js",
@@ -9,10 +9,10 @@
     "static/js/2.93beeca6.chunk.js": "/snakeAI/static/js/2.93beeca6.chunk.js",
     "static/js/2.93beeca6.chunk.js.map": "/snakeAI/static/js/2.93beeca6.chunk.js.map",
     "index.html": "/snakeAI/index.html",
-    "precache-manifest.6f63154a239940f97d359343f2044b76.js": "/snakeAI/precache-manifest.6f63154a239940f97d359343f2044b76.js",
+    "precache-manifest.ae91cfc47afb2fb5d0675f7cb54f2231.js": "/snakeAI/precache-manifest.ae91cfc47afb2fb5d0675f7cb54f2231.js",
     "service-worker.js": "/snakeAI/service-worker.js",
     "static/css/2.765c86df.chunk.css.map": "/snakeAI/static/css/2.765c86df.chunk.css.map",
-    "static/css/main.9bcc2d3f.chunk.css.map": "/snakeAI/static/css/main.9bcc2d3f.chunk.css.map",
+    "static/css/main.dae5923d.chunk.css.map": "/snakeAI/static/css/main.dae5923d.chunk.css.map",
     "static/js/2.93beeca6.chunk.js.LICENSE.txt": "/snakeAI/static/js/2.93beeca6.chunk.js.LICENSE.txt",
     "static/media/index.css": "/snakeAI/static/media/background.444470c7.jpg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.925a331e.js",
     "static/css/2.765c86df.chunk.css",
     "static/js/2.93beeca6.chunk.js",
-    "static/css/main.9bcc2d3f.chunk.css",
+    "static/css/main.dae5923d.chunk.css",
     "static/js/main.bece262f.chunk.js"
   ]
 }
